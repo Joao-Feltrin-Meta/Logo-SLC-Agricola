@@ -8,34 +8,65 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { width: 100%; height: 100%; overflow: hidden; }
     body { font-family: Arial, sans-serif; }
+    .container {
+      background-color: #1B7A2E;
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      height: calc(100vh - 6px);
+    }
+    .divider {
+      width: 2px;
+      height: 86px;
+      background: rgba(255,255,255,0.3);
+      flex-shrink: 0;
+    }
+    .titles h1 {
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+    .titles p {
+      color: #b8e6c4;
+      font-size: 18px;
+      margin-top: 12px;
+      letter-spacing: 0.3px;
+    }
+    .gold-bar {
+      height: 6px;
+      background: #C8A84B;
+    }
   </style>
 </head>
 <body>
 
-  <div style="background-color:#1B7A2E;padding:22px 36px;display:flex;align-items:center;gap:28px;height:calc(100vh - 4px);">
+  <div class="container">
 
-    <svg width="200" height="64" viewBox="0 0 200 64" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="64" height="64" rx="10" fill="#ffffff"/>
-      <g transform="translate(7,7)">
-        <path d="M25 0 C25 0 32 0 36 6 C40 11 39 18 39 18 C39 18 32 16 28 11 C23 7 25 0 25 0 Z" fill="#1B7A2E"/>
-        <path d="M25 0 C25 0 18 0 14 6 C10 11 11 18 11 18 C11 18 18 16 22 11 C27 7 25 0 25 0 Z" fill="#1B7A2E"/>
-        <path d="M50 25 C50 25 50 32 44 36 C39 40 32 39 32 39 C32 39 34 32 38 28 C43 23 50 25 50 25 Z" fill="#1B7A2E"/>
-        <path d="M0 25 C0 25 0 32 6 36 C11 40 18 39 18 39 C18 39 16 32 12 28 C7 23 0 25 0 25 Z" fill="#1B7A2E"/>
-        <circle cx="25" cy="25" r="8" fill="#1B7A2E"/>
+    <svg width="270" height="86" viewBox="0 0 270 86" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="86" height="86" rx="13" fill="#ffffff"/>
+      <g transform="translate(9,9)">
+        <path d="M34 0 C34 0 43 0 49 8 C55 15 53 25 53 25 C53 25 44 22 39 15 C32 9 34 0 34 0 Z" fill="#1B7A2E"/>
+        <path d="M34 0 C34 0 25 0 19 8 C13 15 15 25 15 25 C15 25 24 22 29 15 C36 9 34 0 34 0 Z" fill="#1B7A2E"/>
+        <path d="M68 34 C68 34 68 43 61 49 C54 55 44 53 44 53 C44 53 47 44 53 39 C60 32 68 34 68 34 Z" fill="#1B7A2E"/>
+        <path d="M0 34 C0 34 0 43 7 49 C14 55 24 53 24 53 C24 53 21 44 15 39 C8 32 0 34 0 34 Z" fill="#1B7A2E"/>
+        <circle cx="34" cy="34" r="11" fill="#1B7A2E"/>
       </g>
-      <text x="74" y="30" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="2">SLC</text>
-      <text x="75" y="52" font-family="Arial, sans-serif" font-weight="400" font-size="14" fill="#ffffff" letter-spacing="4.5">AGRÍCOLA</text>
+      <text x="98" y="42" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="40" fill="#ffffff" letter-spacing="2.5">SLC</text>
+      <text x="99" y="70" font-family="Arial, sans-serif" font-weight="400" font-size="17" fill="#ffffff" letter-spacing="5.5">AGRÍCOLA</text>
     </svg>
 
-    <div style="width:1px;height:64px;background:rgba(255,255,255,0.3);flex-shrink:0;"></div>
+    <div class="divider"></div>
 
-    <div>
-      <p style="color:#ffffff;font-size:24px;font-weight:700;margin:0;letter-spacing:0.3px;">Dashboard Monitoramento de Projetos</p>
-      <p style="color:#b8e6c4;font-size:15px;margin:8px 0 0 0;">📋 Gestão &nbsp;·&nbsp; 🤖 Automação &nbsp;·&nbsp; 📅 Entregas &nbsp;·&nbsp; ⚠️ Riscos</p>
+    <div class="titles">
+      <h1>Dashboard Monitoramento de Projetos</h1>
+      <p>📋 Gestão &nbsp;·&nbsp; 🤖 Automação &nbsp;·&nbsp; 📅 Entregas &nbsp;·&nbsp; ⚠️ Riscos</p>
     </div>
 
   </div>
-  <div style="height:4px;background:#C8A84B;"></div>
+  <div class="gold-bar"></div>
 
 </body>
 </html>
